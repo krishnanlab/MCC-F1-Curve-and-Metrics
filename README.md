@@ -14,7 +14,7 @@ The code computes the MCC-F1 curve and its relevant metrics.
 Based on the inputs of ground truths and predicted values; we can calculate Matthews correlation coefficient (MCC) and the 𝐹1 scores which are scoring classifiers. 
 This results in a real-valued prediction score 𝑓(𝑥𝑖) for each element, and then assigning positive predictions (𝑦𝑖̂ = 1) when the score exceeds some threshold 𝜏, or negative predictions (𝑦𝑖̂ = 0).
 
-# #The MCC-F1 metric:
+## The MCC-F1 metric:
 Based on the MCC-F1 scores calulated we can compute the MCC-F1 Metric based on the following steps:
 * Divide the normalized MCC in the curve [min𝑖 𝑋𝑖, max𝑖 𝑋𝑖] into 𝑊 = 100 sub-ranges, each of width 𝑤 = (max𝑖 𝑋𝑖 − min𝑖 𝑋𝑖)/𝑊.
 * calculate the mean Euclidean distance between points with MCC in each sub-range to the point of perfect performance (1,1).
